@@ -1,0 +1,61 @@
+/* Importar uma fonte se desejar, por exemplo do Google Fonts */
+@import "tailwindcss";/* src/index.css */
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); 
+
+body {
+   font-family: 'Inter', sans-serif;
+           background-color: #111827;
+            color: #c9d1d9;
+            
+        }
+
+        .font-display {
+            font-family: 'Playfair Display', serif;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px) scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+  }
+  
+  .portfolio-container {
+    display: flex;
+    min-height: 100vh;
+  }
+  .s{height: 90vh;  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;  
+}
+  .container:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  .content {
+    margin-left: 30vw; /* Offset para o sidebar de perfil */
+    padding: 40px;
+    width: 100vw ; /* Ocupa o restante da largura */
+    box-sizing: border-box;
+    z-index: 1; /* Para garantir que o conteúdo fique acima do background */
+   display: flex;
+  flex-direction: column;
+  
+  }
+  k{
+    
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsivo, mínimo 300px */
+    gap: 30px;
+    padding-top: 0,1%; /* Espaço para o cabeçalho, se houver */
+  }
+

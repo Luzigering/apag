@@ -1,0 +1,12 @@
+.starry-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+                background: radial-gradient(circle, rgba(145, 172, 255, 0.2) 1px, transparent 1.5px),
+                        radial-gradient(circle, rgba(145, 172, 255, 0.2) 1px, transparent 1.5px),
+                        radial-gradient(circle, rgba(145, 172, 255, 0.2) 1px, transparent 1.5px);
+    /* Você pode ajustar o gradiente para mais azulado */
+  }
